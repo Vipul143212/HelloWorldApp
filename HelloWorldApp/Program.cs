@@ -21,6 +21,9 @@
 
                     } while (!double.TryParse(Console.ReadLine(), out Input_2));
 
+                    double Result = Sum(Input_1, Input_2);
+                    Console.WriteLine($"The sum is : {Math.Round(Result, 4)}");
+
                 }
                 catch (Exception ex)
                 {
