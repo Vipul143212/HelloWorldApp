@@ -23,6 +23,8 @@
 
                     double Result = Sum(Input_1, Input_2);
                     Console.WriteLine($"The sum is : {Math.Round(Result, 4)}");
+                    double ProductResult = Multiply(Input_1, Input_2);
+                    Console.WriteLine($"The Product is : {Math.Round(ProductResult, 4)}");
 
                 }
                 catch (Exception ex)
@@ -34,6 +36,10 @@
         private static double Sum(double x, double y)
         {
             return x + y;
+        }
+        private static double Multiply(double x, double y)
+        {
+            return x * y;
         }
     }
 }
